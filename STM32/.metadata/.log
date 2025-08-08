@@ -1,0 +1,67 @@
+!SESSION 2025-08-06 13:53:26.777 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-06 13:53:54.614
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-06 13:53:54.614
+!MESSAGE Log4j2 initialized with config file D:\GitHub\embedded_systems\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-06 13:53:57.130
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-06 13:59:28.466
+!MESSAGE Indexed 'stm32_uart_dma_example_rx_tx' (24 sources, 85 headers) in 3.17 sec: 7,767 declarations; 56,196 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0031%)
+!SESSION 2025-08-08 14:29:42.088 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-08-08 14:29:51.142
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-08-08 14:29:54.559
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-08-08 14:29:54.559
+!MESSAGE Log4j2 initialized with config file D:\GitHub\embedded_systems\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-08-08 14:30:05.447
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-08 14:48:21.524
+!MESSAGE Indexed 'stm32_uart_dma_example_rx_tx' (27 sources, 125 headers) in 3.46 sec: 16,028 declarations; 94,353 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-08 14:49:05.279
+!MESSAGE Indexed 'stm32_uart_dma_example_rx_tx' (26 sources, 125 headers) in 1.99 sec: 15,978 declarations; 93,716 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.16%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-08 14:49:37.040
+!MESSAGE Indexed 'stm32_uart_dma_example_rx_tx' (26 sources, 125 headers) in 2.02 sec: 15,978 declarations; 93,716 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.16%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-08-08 14:51:53.920
+!MESSAGE Error in final launch sequence:
+
+Setup exceptions
+!STACK 1
+org.eclipse.core.runtime.CoreException: Setup exceptions
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2025-08-08 14:51:53.921
+!MESSAGE Setup exceptions
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-08 15:02:03.051
+!MESSAGE Indexed 'stm32_uart_dma_example_rx_tx' (26 sources, 125 headers) in 2 sec: 15,978 declarations; 93,717 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.16%)

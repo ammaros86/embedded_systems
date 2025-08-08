@@ -1,0 +1,28 @@
+# Ignore build output
+/build/
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.list
+
+# CubeIDE specific files
+/.settings/
+/*.launch
+/.cproject
+/.project
+
+# STM32CubeIDE build artifacts
+Debug/
+Release/
+
+# Other temporary files
+*.log
+*.tmp
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db

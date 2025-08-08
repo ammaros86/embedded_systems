@@ -1,0 +1,98 @@
+📡 UART Communication with DMA (STM32)
+This project demonstrates how to use DMA (Direct Memory Access) with UART communication on an STM32 microcontroller. The goal is to transfer data efficiently between the MCU and a host (e.g., a PC) without burdening the CPU.
+
+🔍 What Does This Program Do?
+The program uses USART3 to receive exactly 10 bytes of data via DMA. Once the data is received, it is immediately sent back using DMA again. This process runs automatically in a loop, without requiring any CPU intervention between receive/send cycles.
+
+In short:
+
+Receives 10 bytes via UART using DMA
+
+Copies the received data to a transmit buffer
+
+Sends the same 10 bytes back via UART using DMA
+
+Repeats continuously
+
+✅ Advantages of Using DMA
+DMA stands for Direct Memory Access and allows peripherals (like UART) to read/write directly to RAM without CPU involvement. This brings several benefits:
+
+🔄 Asynchronous data transfer (non-blocking)
+
+🚀 Faster and more efficient than polling or interrupts alone
+
+💡 Frees up CPU time for other tasks
+
+🔋 Lower power consumption (CPU can sleep or handle more important tasks)
+
+⚠️ Important: Limited to 10 Bytes
+In this specific example, the DMA is configured to receive exactly 10 bytes. This is crucial to understand:
+
+If you send more than 10 bytes, the following happens:
+
+Only the first 10 bytes are received correctly
+
+The remaining bytes are lost, because the DMA buffer is already full
+
+No overflow handling is implemented in this simple setup
+
+Possible Solutions:
+Use circular DMA mode for continuous streaming
+
+Use UART Idle Line Detection to handle variable-length messages
+
+Increase the buffer size (e.g. to 64 or 256 bytes) if you expect more data
+
+Implement a protocol with length headers or terminators
+
+🧪 How to Use
+Flash the project to an STM32 board with USART3 enabled
+
+Connect a USB-to-Serial adapter or ST-Link Virtual COM port
+
+Open a serial terminal (e.g., PuTTY, Tera Term, STM32CubeMonitor)
+
+Settings: 115200 baud, 8 data bits, no parity, 1 stop bit (8N1)
+
+Send exactly 10 bytes → You’ll receive the same 10 bytes back
+
+Send more than 10 bytes → Only the first 10 are echoed back
+
+🛠️ Technologies Used
+STM32 HAL (Hardware Abstraction Layer)
+
+STM32CubeMX for code generation
+
+DMA for UART TX and RX
+
+UART callbacks for synchronization
+
+Written in C using STM32 HAL driver framework
+
+📁 Project Structure
+text
+Kopieren
+Bearbeiten
+├── Core
+│   ├── Inc
+│   └── Src
+├── Drivers
+├── README.md
+└── .ioc (STM32CubeMX project file)
+📉 Limitations / Disadvantages of DMA (in this example)
+DMA length must be known in advance
+
+No support for dynamic or variable-length messages
+
+Overflow can occur if too much data is sent at once
+
+Idle line or timeout detection must be implemented manually (not included here)
+
+📌 Next Steps / Possible Improvements
+Handle variable-length messages using UART Idle Interrupts
+
+Implement ring buffers or FIFO for continuous data streaming
+
+Integrate FreeRTOS with DMA for multitasking applications
+
+Extend DMA usage to other peripherals like SPI or ADC

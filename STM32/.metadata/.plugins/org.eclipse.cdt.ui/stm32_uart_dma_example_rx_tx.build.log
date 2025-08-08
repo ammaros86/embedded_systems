@@ -1,0 +1,10 @@
+16:03:18 **** Incremental Build of configuration Debug for project stm32_uart_dma_example_rx_tx ****
+make -j16 all 
+arm-none-eabi-size  stm32_uart_dma_example_rx_tx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  48264	    472	   2320	  51056	   c770	stm32_uart_dma_example_rx_tx.elf
+Finished building: default.size.stdout
+ 
+
+16:03:18 Build Finished. 0 errors, 0 warnings. (took 196ms)
+
